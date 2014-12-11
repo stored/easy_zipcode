@@ -49,6 +49,13 @@ coverage.xml
 
 # Sphinx documentation
 docs/_build/
+_build/
 
 # PyBuilder
 target/
+
+# Redis
+*.rdb
+
+# Mac
+.DS_Store
