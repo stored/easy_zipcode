@@ -17,8 +17,10 @@ Você também pode instalar através do pacote pip: ::
    
     pip install easy_zipcode
 
-No arquivo settings.py de seu projeto, adicione a app easyzipcode: ::
+No arquivo settings.py de seu projeto, adicione a app easyzipcode e o token gerado: ::
     
+    EASY_ZIPCODE_TOKEN = '3850de3a-2422-482d-92fc-d1a48a71eba1'
+
     INSTALLED_APPS = (
         'django.contrib.admin',
         'django.contrib.auth',
