@@ -1,0 +1,29 @@
+.. easyzipcode documentation master file, created by
+   sphinx-quickstart on Fri Dec  5 16:39:23 2014.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+easyzipcode docs
+=======================================
+easyzipcode é uma lib Python usada para retornar informações
+de um determinado endereço a partir do CEP, com dados provenientes do webservice
+easyzipcode.com
+
+Contents:
+   * :rolename:`Autenticação`
+   * :rolename:`Criar contas`
+   * :rolename:`Buscar CEP`
+
+.. toctree::
+   :maxdepth: 5
+   
+   autenticacao
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

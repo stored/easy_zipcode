@@ -1,0 +1,21 @@
+syntax: glob
+
+htmlcov/
+.DS_Store
+*.log
+*.db
+_env/
+*.orig
+*.pyc
+*.sqlite3
+*.rdb
+
+# dev settings
+dev.py
+
+# make docs
+_build
+
+docs/_build
+docs/_static
+docs/_templates
