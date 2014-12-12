@@ -2,7 +2,6 @@
 import json
 import requests
 
-
 URL = 'http://easyzipcode.com/api/v1/%(zip_code)s/?token=%(token)s'
 
 
