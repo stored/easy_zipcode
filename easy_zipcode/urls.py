@@ -1,9 +1,10 @@
 # -*- coding: utf-8 -*-
 from django.conf.urls import patterns, include, url
-from views import EasyZipCodeDetailView
+
+from views import zipcode_view
 
 
 urlpatterns = patterns(
     '',
-    url(r'$', EasyZipCodeDetailView.as_view()),
+    url(r'$', zipcode_view),
 )

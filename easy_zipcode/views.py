@@ -1,13 +1,13 @@
 # -*- coding: utf-8 -*-
-from django.views.generic import DetailView
+from django.conf import settings
+from django.http import HttpResponse
 
 from main import EasyZipCode
 
 
-class EasyZipCodeDetailView(DetailView):
-    main_class = EasyZipCode
-
-    def get_zipcode(self):
-        object = super(EasyZipCodeDetailView, self).get_zipcode()
-        object.save()
-        return object
+def zipcode_view(request):
+    return HttpResponse(EasyZipCode.get_zipcode_info(
+        zip_code=request.GET.get('zip_code'),
+        token=settings.EASY_ZIPCODE_TOKEN,
+        plain_text=True,
+    ))
