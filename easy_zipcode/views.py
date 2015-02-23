@@ -6,7 +6,7 @@ from main import EasyZipCode
 
 
 def zipcode_view(request):
-    return HttpResponse(EasyZipCode.get_zipcode_info(
+    return HttpResponse(EasyZipCode.get_zipcode(
         zip_code=request.GET.get('zip_code'),
         token=settings.EASY_ZIPCODE_TOKEN,
         plain_text=True,
