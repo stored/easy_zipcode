@@ -44,5 +44,5 @@ Adicione a seguinte linha no arquivo ``urls.py`` do seu projeto: ::
     
     urlpatterns = patterns('',
         ...
-        url(r'^easyzipcode/', include(easyzipcode.urls())),
+        url(r'^easyzipcode/', include(easy_zipcode.urls())),
     )
