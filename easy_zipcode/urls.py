@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
-from django.conf.urls import patterns, include, url
+try:
+	from django.conf.urls import patterns, include, url
+except:
+	from django.conf.urls.defaults import patterns, include, url
 
 from views import zipcode_view
 
