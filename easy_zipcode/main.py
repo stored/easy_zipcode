@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+# coding: utf-8
 import json
 import requests
 
@@ -12,7 +12,6 @@ class EasyZipCode(object):
             'zip_code': zip_code,
             'token': token,
         })
-
         if plain_text:
             return req.content
-        return json.loads(req.content)
+        return json.loads(json.dumps(req.content, 'utf-8'))
