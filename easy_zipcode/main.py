@@ -14,4 +14,4 @@ class EasyZipCode(object):
         })
         if plain_text:
             return req.content
-        return json.loads(json.dumps(req.content, 'utf-8'))
+        return self.render_to_response(req.json())

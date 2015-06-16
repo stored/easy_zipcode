@@ -4,10 +4,10 @@ try:
 except:
 	from django.conf.urls.defaults import patterns, include, url
 
-from views import zipcode_view
+from views import EasyZipCodeView
 
 
 urlpatterns = patterns(
     '',
-    url(r'$', zipcode_view),
+    url(r'$', EasyZipCodeView.as_view(), name='easy_zipcode'),
 )
