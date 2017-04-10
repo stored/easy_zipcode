@@ -22,5 +22,5 @@ class EasyZipCodeView(JSONResponseMixin, View):
     def get(self, request, *args, **kwargs):
         zip_code = request.GET.get('zip_code').replace("-", "")
         token = settings.EASY_ZIPCODE_TOKEN
-        data = EasyZipCode.get_zipcode(zip_code, token, plain_text=True)
+        data = EasyZipCode.get_zipcode(zip_code, token)
         return self.render_to_response(data)

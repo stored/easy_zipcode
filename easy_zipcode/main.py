@@ -1,6 +1,6 @@
 # coding: utf-8
-import json
 import requests
+
 
 URL = 'http://easyzipcode.io/api/v1/%(zip_code)s/?token=%(token)s'
 
@@ -14,4 +14,4 @@ class EasyZipCode(object):
         })
         if plain_text:
             return req.content
-        return self.render_to_response(req.json())
+        return req.json()
